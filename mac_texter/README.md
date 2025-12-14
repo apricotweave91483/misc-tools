@@ -33,19 +33,19 @@ At the top of the script, set the shebang to the **venv python binary**:
 
 Make the script executable:
 ```bash
-chmod +x texter
+chmod +x texter.py
 ```
 
 ## usage
 
 ```bash
-./texter {name} {other_name} ... -MSG "your message here"
+./texter.py {name} {other_name} ... -MSG "your message here"
 ```
 
 ## example
 
 ```bash
-./texter Alice Bob -MSG "Running late, be there soon"
+./texter.py Alice Bob -MSG "Running late, be there soon"
 ```
 
 this will:

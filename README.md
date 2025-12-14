@@ -21,11 +21,8 @@ A terminal-based Pomodoro timer
 ---
 
 ### mac_texter
-A macOS-only CLI tool for sending text messages.
 
-**Purpose**
-- Send Messages texts from the terminal
-- Maybe scripting texts
+Send Messages texts from the terminal
 
 ---
 

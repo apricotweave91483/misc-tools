@@ -67,6 +67,7 @@ project/
     clink.py
     main.c
 ```
+but really the clink.py script can be stored anywhere
 
 ---
 

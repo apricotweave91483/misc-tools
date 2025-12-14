@@ -51,7 +51,7 @@ chmod +x texter.py
 this will:
 1. open Spotlight
 2. launch the Messages app
-3. create new conversations for each provided name
+3. open a new message and enter each provided name
 4. send the provided message
 
 ## notes

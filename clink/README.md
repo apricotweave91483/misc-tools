@@ -102,8 +102,7 @@ clink cmp lb main.c -o test.c
 
 - `#include` order is **not preserved** (they are stored in a Python set)
 - Only the **first** `.c` argument is treated as the main file
-- This is pure concatenation — symbol order still matters
-- No preprocessing, parsing, or dependency resolution
+- This is pure concatenation, so symbol order matters
 
 ---
 

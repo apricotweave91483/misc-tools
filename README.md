@@ -32,6 +32,6 @@ A macOS-only CLI tool for sending text messages.
 
 ## notes
 - Each tool is standalone
-- Each subdirectory contains its own README with usage details
+- Check each folder for a README with more domain specific instructions
 
 ---

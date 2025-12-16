@@ -5,12 +5,10 @@ code in a `C_Utils` folder and then generate a single final `.c` file.
 
 ---
 
-## Setup (recommended)
-
-For convenience, alias clink to the Python script in your shell config:
+## recommended
 alias clink="python3 /full/path/to/clink.py"
 
-## How it works
+## how it works
 
 Given a command like:
 
@@ -33,24 +31,16 @@ The script does the following:
 
 3. The **first** argument that *does* end in `.c` is treated as the main file.
 
-4. All utility files are read first (in the order you typed them),
-   then the main file is read last.
+4. All utility files are read in the order typed ,
+   then the main file is read last
 
-5. All `#include ...` lines across every file are collected into a set.
-   This removes duplicate includes.
+5. All `#include ...` lines across every file are collected into a set to avoid duplicate includes.
 
 6. The output file is written as:
    - all unique `#include` lines at the top
-   - followed by all remaining code lines from each file, in order
-   - original `#include` lines are skipped during body writing
+   - followed by all remaining code lines from each file , in order
 
-7. The output filename defaults to:
-
-```text
-_final.c
-```
-
-but can be overridden using `-o <filename>`.
+7. The output filename defaults to `_final.c` but can be overridden using `-o <filename>`.
 
 ---
 
@@ -103,10 +93,10 @@ clink cmp lb main.c -o test.c
 
 - `#include` order is **not preserved** (they are stored in a Python set)
 - Only the **first** `.c` argument is treated as the main file
-- This is pure concatenation, so symbol order matters
+- This is pure concatenation , so symbol order matters
 
 ---
 
 ## Why I made it
 
-- I wanted a place to store data structs / algos for puzzles that needed them , and I wanted to avoid manual copy/paste
+- I wanted a place to store data structs , algos , or helper functions for puzzles that needed them , and I wanted to avoid manual copy/paste

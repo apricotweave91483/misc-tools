@@ -97,4 +97,6 @@ clink cmp lb main.c -o test.c
 
 ## Why I made it
 
-- I wanted a place to store data structs , algos , or helper functions for puzzles that needed them , and I wanted to avoid manual copy/paste
+- I wanted a place to store data structs , algos , or helper functions for puzzles
+     - concat those when I needed them
+     - avoid manual copy/paste
